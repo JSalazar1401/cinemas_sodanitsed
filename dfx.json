@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "cinemas_sodanitsed_backend": {
+      "main": "src/cinemas_sodanitsed_backend/main.mo",
+      "type": "motoko"
+    },
+    "cinemas_sodanitsed_frontend": {
+      "dependencies": [
+        "cinemas_sodanitsed_backend"
+      ],
+      "source": [
+        "src/cinemas_sodanitsed_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "cinemas_sodanitsed_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
